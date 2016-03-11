@@ -8,7 +8,7 @@
 
 // 图标
 .icons {
-    @include size(40px);
+    @include size(55px);
     overflow: none;
     display: inline-block;
     background-image: url(../../images/icons.png);
@@ -16,13 +16,41 @@
 .icon-home {
     @extend .icons;
     display: block;
+    @include size(40px);
     background-position: 50px 295px;
     margin-left: 45px;
 }
 .icon-search {
     @extend .icons;
-    @include size(50px);
     background-position: 0 10px;
+}
+.icon-box {
+    @extend .icons;
+    background-position: 0 -50px;
+}
+.icon-money {
+    @extend .icons;
+    background-position: 0 -120px;
+}
+.icon-website {
+    @extend .icons;
+    background-position: 0 -185px;
+}
+.icon-book {
+    @extend .icons;
+    background-position: -65px 10px;
+}
+.icon-time {
+    @extend .icons;
+    background-position: -65px -50px;
+}
+.icon-print {
+    @extend .icons;
+    background-position: -65px -120px;
+}
+.icon-manual {
+    @extend .icons;
+    background-position: -65px -185px;
 }
 
 // 标题
@@ -89,9 +117,6 @@
     @include skin-bgfg($main-blue, #fff);
     text-align: center;
     line-height: 40px;
-}
-.footer-img {
-    margin: 20px 0 50px 0;
 }
 
 // 颜色
