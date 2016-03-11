@@ -3,8 +3,10 @@
 @import 'custom/mixin.scss';
 
 
-// 图片大小
-@include size-icon(90);
+// 超链接
+.link-gray {
+    @include link(#333);
+}
 
 // 图标
 .icons {
@@ -60,11 +62,6 @@
     line-height: 40px;
 }
 
-// 默认超链接样式
-.container {
-    @include link-a(#fff);
-}
-
 
 // 顶部导航
 .top-nav {
@@ -82,7 +79,7 @@
             margin-right: 35px;
         }
     }
-    
+    @include link-a(#fff);  
 }
 
 // 头部
@@ -101,10 +98,17 @@
     height: 40px;
     font-size: 18px;
     text-align: center;
+    @include link-a(#fff);
+}
+.nav-child {
+    font-size: 14px;
+    background: $main-red;
+    @include link-a(#fff);
 }
 
 // 底部导航
 .footer-nav {
+    font-size: 12px;
     padding: 20px;
     background: linear-gradient(to bottom, #f0f0f0, #fbfbfb);
     dt,dd {
