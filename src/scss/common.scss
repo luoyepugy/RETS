@@ -1,0 +1,77 @@
+
+@import 'custom/custom.scss';
+@import 'custom/mixin.scss';
+
+
+// 图片大小
+@include size-icon(90);
+
+// 图标
+.icons {
+    @include size(40px);
+    overflow: none;
+    display: inline-block;
+    background-image: url(../../images/icons.png);
+}
+.icon-home {
+    @extend .icons;
+    display: block;
+    background-position: 50px 295px;
+    margin-left: 45px;
+}
+.icon-search {
+    @extend .icons;
+    @include size(50px);
+    background-position: 0 10px;
+}
+
+// 默认超链接样式
+.container {
+    @include link-a(#fff);
+}
+
+
+// 顶部导航
+.top-nav {
+    font-size: 12px;
+    color: #fff;
+    border-top: 3px solid $main-blue;
+    ul {
+        background: $main-blue;
+        padding: 5px 20px;
+    }
+    li {
+        @include inline-block;
+        margin-right: 10px;
+        &:nth-child(2) {
+            margin-right: 35px;
+        }
+    }
+    
+}
+
+// 头部
+.header {
+
+}
+.header-hotline {
+    border-right: 1px solid #bfbfbf;
+    text-align: center;
+}
+
+// 导航
+.nav {
+    background: $main-red;
+    line-height: 40px;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+// 颜色
+@include color('gray', '#bfbfbf');
+@include color('dark-blue', '#30318b');
+@include color('red', '#e60012');
+@include color('white');
+@include color('black');
