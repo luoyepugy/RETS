@@ -23,7 +23,7 @@ gulp.task('css',function (){
 
 // js
 gulp.task('js', function() {
-  return gulp.src('src/js/**/*.js')
+  return gulp.src('www/js/**/*.js')
     .pipe($.jshint, '.jshintrc')
     .pipe($.jshint.reporter, 'jshint-stylish');
     // .pipe(plugins.uglify())
@@ -66,7 +66,7 @@ gulp.task('clean', function() {
 // 监听
 gulp.task('watch', function() {
 
-    gulp.watch('www/lib/ionic/**/*.scss');
+    // gulp.watch('www/lib/ionic/**/*.scss');
     gulp.watch('src/scss/**/*.scss', ['css']);
     gulp.watch('www/js/**/*.js', ['js']);
 

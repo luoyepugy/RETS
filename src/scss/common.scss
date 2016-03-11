@@ -25,6 +25,13 @@
     background-position: 0 10px;
 }
 
+// 标题
+.title {
+    color: #333;
+    font-weight: 700;
+    line-height: 40px;
+}
+
 // 默认超链接样式
 .container {
     @include link-a(#fff);
@@ -68,6 +75,24 @@
     text-align: center;
 }
 
+// 底部导航
+.footer-nav {
+    padding: 20px;
+    background: linear-gradient(to bottom, #f0f0f0, #fbfbfb);
+    dt,dd {
+        line-height: 27px;
+    }
+}
+
+// 版权
+.copyright {
+    @include skin-bgfg($main-blue, #fff);
+    text-align: center;
+    line-height: 40px;
+}
+.footer-img {
+    margin: 20px 0 50px 0;
+}
 
 // 颜色
 @include color('gray', '#bfbfbf');
