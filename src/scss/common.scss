@@ -204,6 +204,7 @@
 
 // 版权
 .copyright {
+    font-size: 12px;
     @include skin-bgfg($main-blue, #fff);
     text-align: center;
     line-height: 40px;
@@ -212,7 +213,7 @@
 // 右侧浮动广告
 .fixed-ad {
     font-size: 12px;
-    @include position-basic(fixed, right, 100px, bottom, 100px);
+    @include position-basic(fixed, right, 0, bottom, 100px);
     .telephone, .vCode {
         border: 1px solid $main-blue;
         position: relative;
@@ -223,7 +224,7 @@
             position: relative;
             @include inside-center(80px, 25px);
             margin: 0 0 5px 15px;
-            padding-left: 25px;
+            padding-left: 20px;
             &::before {
                 content: '';
                 @extend .icons;
