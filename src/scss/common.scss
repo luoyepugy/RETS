@@ -62,8 +62,8 @@
 }
 .icon-russia {
     @extend .icons;
-    background-position: -65px -185px;
-    @include size(40px);
+    background-position: 120px 0;
+    @include size(40px, 35px);
 }
 // 标题
 .title {
@@ -73,7 +73,7 @@
 }
 
 // icon
-@include size-icon(200,85);
+@include size-icon(210,90);
 @include size-icon(310,380);
 @include size-icon(230,185);
 
@@ -211,11 +211,30 @@
 
 // 右侧浮动广告
 .fixed-ad {
+    font-size: 12px;
     @include position-basic(fixed, right, 100px, bottom, 100px);
     .telephone, .vCode {
         border: 1px solid $main-blue;
         position: relative;
         background: #fff;
+        li {
+            background: $main-blue;
+            border-radius: 3px;
+            position: relative;
+            @include inside-center(80px, 25px);
+            margin: 0 0 5px 15px;
+            padding-left: 25px;
+            &::before {
+                content: '';
+                @extend .icons;
+                background-position: 117px -142px;
+                position: absolute;
+                left: 0;
+
+                @include size(35px, 30px);
+            }
+        }
+        @include link-a(#fff);
     }
     .vCode {
         @include size(130px, 165px);
@@ -223,7 +242,10 @@
         padding-top: 20px;
     }
     .telephone {
-        @include size(130px, 330px);
+        @include size(130px, 340px);
+        div {
+            border-top: 1px solid $main-blue;
+        }
     }
     .close {
         cursor: pointer;
