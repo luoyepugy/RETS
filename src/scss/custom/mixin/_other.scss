@@ -23,3 +23,11 @@
     display: none;
   }
 }
+
+// 右浮动
+@mixin float-right {
+	float: right;
+	position: absolute;
+	right: 0;
+	top: 0;
+}

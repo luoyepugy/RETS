@@ -3,6 +3,7 @@
 @import 'custom/mixin.scss';
 
 
+
 // 超链接
 .link-gray {
     @include link(#333);
@@ -15,16 +16,21 @@
     display: inline-block;
     background-image: url(../../images/icons.png);
 }
-.icon-home {
-    @extend .icons;
-    display: block;
-    @include size(40px);
-    background-position: 50px 295px;
-    margin-left: 45px;
-}
+// .icon-home {
+//     @extend .icons;
+//     display: block;
+//     @include size(40px);
+//     background-position: 50px 295px;
+//     margin-left: 45px;
+// }
 .icon-search {
     @extend .icons;
     background-position: 0 10px;
+}
+.icon-search2 {
+    @extend .icons;
+    @include size(40px);
+    background-position: 50px -9px;
 }
 .icon-box {
     @extend .icons;
@@ -54,7 +60,11 @@
     @extend .icons;
     background-position: -65px -185px;
 }
-
+.icon-russia {
+    @extend .icons;
+    background-position: -65px -185px;
+    @include size(40px);
+}
 // 标题
 .title {
     color: #333;
@@ -62,6 +72,15 @@
     line-height: 40px;
 }
 
+// icon
+@include size-icon(200,85);
+@include size-icon(310,380);
+@include size-icon(230,185);
+
+// 水平绝对居中
+.center {
+    @include position-centerH(1024px, relative);
+}
 
 // 顶部导航
 .top-nav {
@@ -70,13 +89,21 @@
     border-top: 3px solid $main-blue;
     ul {
         background: $main-blue;
+        width: 210px;
         padding: 5px 20px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        @include position-basic(absolute, right, 0 , top, 0);
+        z-index: 10;
     }
     li {
         @include inline-block;
-        margin-right: 10px;
+        margin-right: 15px;
         &:nth-child(2) {
-            margin-right: 35px;
+            margin-right: 20px;
+        }
+        &:last-child {
+            margin-right: 0;
         }
     }
     @include link-a(#fff);  
@@ -84,35 +111,94 @@
 
 // 头部
 .header {
+    position: relative;
+    padding: 15px;
+}
+.header-right {
+    @include float-right;
+    padding-top: 45px;
+    @include display-inline(180px, 125px);
+    .inline-left {
+        border-right: 1px solid #bfbfbf;
+    }
+    .inline-right {
+        padding-left: 20px;
+    }
+}
 
-}
-.header-hotline {
-    border-right: 1px solid #bfbfbf;
-    text-align: center;
-}
 
 // 导航
-.nav {
+.main-nav {
     background: $main-red;
     line-height: 40px;
     height: 40px;
     font-size: 18px;
     text-align: center;
     @include link-a(#fff);
+    color: #fff;
+}
+.nav-title {
+    padding: 0 20px;
+    &>li {
+        float: left;
+        width: 160px;
+        position: relative;
+        cursor: pointer;
+    }
+    
 }
 .nav-child {
     font-size: 14px;
     background: $main-red;
     @include link-a(#fff);
+    width: 160px;
+    @include position-basic(absolute, left, 0, top, 40px);
+    z-index: 10;
+    li:hover {
+        background: darken($main-red, 10%);
+    }
+    a {
+        display: block;
+    }
 }
 
 // 底部导航
-.footer-nav {
+.footer {
+    box-shadow: 0 5px 10px 0 #e0e0e0 inset;
+    margin-top: 20px;
     font-size: 12px;
     padding: 20px;
     background: linear-gradient(to bottom, #f0f0f0, #fbfbfb);
+    * {
+        vertical-align: top;
+    }
+    .footer-nav,.footer-vCode {
+        @include inline-block;
+    }
+}
+.footer-nav {
+    width: 700px;
+    dl {
+        @include inline-block;
+        width: 110px;
+        padding-left: 20px;
+    }
+    dt {
+        font-weight: 700;
+    }
     dt,dd {
         line-height: 27px;
+    }
+    @include link-a(#6f6f6f);
+}
+.footer-vCode {
+    width: 300px;
+    div {
+        @include inline-block;
+        text-align: center;
+        &:first-child {
+            margin-right: 40px;
+        }
     }
 }
 
@@ -121,6 +207,30 @@
     @include skin-bgfg($main-blue, #fff);
     text-align: center;
     line-height: 40px;
+}
+
+// 右侧浮动广告
+.fixed-ad {
+    @include position-basic(fixed, right, 100px, bottom, 100px);
+    .telephone, .vCode {
+        border: 1px solid $main-blue;
+        position: relative;
+        background: #fff;
+    }
+    .vCode {
+        @include size(130px, 165px);
+        text-align: center;
+        padding-top: 20px;
+    }
+    .telephone {
+        @include size(130px, 330px);
+    }
+    .close {
+        cursor: pointer;
+        @include position-basic(absolute, right, 2px, top, 2px);
+        @include inside-center(15px);
+        @include skin-bgfg($main-blue, #fff);
+    }
 }
 
 // 颜色

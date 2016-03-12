@@ -31,9 +31,9 @@
 //
 // 参数为（宽度）
 //
-@mixin position-centerH($width) {
+@mixin position-centerH($width, $type) {
   width: $width;
-  position: absolute;
+  position: $type;
   left: 50%;
   margin-left: - ($width / 2);
 }

@@ -8,18 +8,30 @@ $(function() {
 		$('.j-tabs li').removeClass('active').eq(index).addClass('active');
 	});
 
+	// banner图
+	$('.j-banner').owlCarousel({
+		slideSpeed : 300,
+      	paginationSpeed : 400,
+      	singleItem:true,
+      	autoPlay: 5000
+	});
+	$('.j-bannerNext').click(function(){
+	    $('.j-banner').trigger('owl.next');
+	});
+	$('.j-bannerPrev').click(function(){
+	    $('.j-banner').trigger('owl.prev');
+	});
+
 	// 友情链接
 	$('.j-links').owlCarousel({
 		autoPlay: 3000,
-		items: 5,
-		itemsDesktop : [1000,5], //5 items between 1000px and 901px
-        itemsDesktopSmall : [900,3], // betweem 900px and 601px
-        itemsTablet: [600,2], //2 items between 600 and 0
-        itemsMobile : false,
-        navigation : true
+		items: 5
+	});
+	$('.j-linksNext').click(function(){
+	    $('.j-links').trigger('owl.next');
+	});
+	$('.j-linksPrev').click(function(){
+	    $('.j-links').trigger('owl.prev');
 	});
 
-	$('.j-links .next').click(function(){
-	    owl.trigger('owl.next');
-	});
 });
