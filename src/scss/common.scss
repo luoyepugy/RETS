@@ -14,7 +14,7 @@
     @include size(55px);
     overflow: none;
     display: inline-block;
-    background-image: url(../../images/icons.png);
+    background-image: url(../images/icons.png);
 }
 // .icon-home {
 //     @extend .icons;
@@ -30,7 +30,7 @@
 .icon-search2 {
     @extend .icons;
     @include size(40px);
-    background-position: 50px -9px;
+    background-position: 185px -8px;
 }
 .icon-box {
     @extend .icons;

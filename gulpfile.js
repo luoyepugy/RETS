@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 
 // css
 gulp.task('css',function (){
-    return gulp.src("./src/scss/*.scss")
+    return gulp.src("./src/scss/**/*.scss")
         .pipe(plugins.sass({
           errLogToConsole: true,
           outputStyle: 'compressed'
