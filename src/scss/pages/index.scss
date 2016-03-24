@@ -29,6 +29,7 @@
 // 业务
 .business-nav {
     @include skin-bgfg($main-red, #fff);
+    @include link-a(#fff, #fff);
     line-height: 70px;
     height: 70px;
     &>li {

@@ -1,0 +1,110 @@
+
+
+@import '../custom/custom.scss';
+@import '../custom/mixin.scss';
+
+.main {
+	margin: 15px 0 100px 0;
+	.side-menu {
+		width: 200px;
+		@include inline-block;
+		@include link-a(#666, #666);
+		.dt {
+			@include skin-bgfg($main-red, #fff);
+			line-height: 40px;
+			padding-left: 25px;
+		}
+		a {
+			display: block;
+		}
+		li {
+			line-height: 40px;
+			border-bottom: 1px dashed #bcbcbc;
+			padding-left: 50px;
+			position: relative;
+			&:before {
+				content: '';
+				@include size(10px);
+				border-radius: 5px;
+				background: #666;
+				@include position-basic(absolute, left, 28px, top, 15px);
+			}
+			&.active {
+				border-right: 3px solid $main-red;
+				&:after {
+					content: '';
+					@include size(0);
+					border-right: 3px solid $main-red;
+					line-height: 0;
+					@include position();
+				}
+				&:before {
+					background: $main-red;
+				}
+				@include link-a($main-red);
+			}
+		}
+	}
+	.content {
+		width: 800px;
+		@include inline-block;
+		vertical-align: top;
+		margin-left: 18px;
+	}
+}
+
+// 客户服务
+.client {	
+	// 查询按钮
+	.btn-search {
+		@include inside-center(120px, 55px);
+		@include skin-bgfg($main-red, #fff);
+		border-top: 3px solid $main-blue;
+		font-size: 18px;
+		@include inline-block;
+		vertical-align: top;
+		margin: 20px 0 0 10px;
+		cursor: pointer;
+	}
+	.textarea {
+		width: 480px;
+		padding: 10px;
+		@include inline-block;
+	}
+	// 查询结果
+	.search-result {
+		margin-top: 60px;
+		.img {
+			li {
+				margin-right: 90px;
+				&:last-child {
+					margin-right: 0;
+				}
+				@include inline-block;
+				&.active {
+					.icon　{
+						background: $main-red;
+					}
+					color: $main-red;
+				}
+			}
+		}
+		.icon {
+			@include size(80px);
+			border-radius: 40px;
+			@include skin-bgfg(#e6e6e6, #fff);
+			@include inline-block;
+		}
+		.text {
+			margin-top: 30px;
+			li {
+				padding-left: 65px;
+				margin-bottom: 15px;
+			}
+			span {
+				margin-right: 35px;
+			}
+		}
+		
+	}
+}

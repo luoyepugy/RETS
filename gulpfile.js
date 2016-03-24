@@ -34,7 +34,7 @@ gulp.task('js', function() {
 
 // 图片压缩
 gulp.task('images', function () {
-    return gulp.src('./src/images/*')
+    return gulp.src('./src/images/**/*')
         .pipe(plugins.imagemin({
             progressive: true,                      //类型：Boolean 默认：false 无损压缩jpg图片
             svgoPlugins: [{removeViewBox: false}],  //不要移除svg的viewbox属性

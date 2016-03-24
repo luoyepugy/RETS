@@ -71,6 +71,11 @@
     font-weight: 700;
     line-height: 40px;
 }
+.sub-title {
+    color: #666;
+    line-height: 40px;
+    font-size: 18px;
+}
 
 // icon
 @include size-icon(210,90);
@@ -259,6 +264,6 @@
 // 颜色
 @include color('gray', '#bfbfbf');
 @include color('dark-blue', '#30318b');
-@include color('red', '#e60012');
+@include color('red', $main-red);
 @include color('white');
 @include color('black');
