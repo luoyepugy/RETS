@@ -42,7 +42,7 @@ $(function() {
 			$('.j-searchInput').slideUp().next('div').slideDown();
 		}, 500);
 	}, function() {
-		$(this).parent().removeClass('searchPackageOn').animate({height:'143px'});
+		$(this).parent().removeClass('searchPackageOn').animate({height:'127px'});
 		setTimeout(function() {
 			$('.j-searchInput').slideDown().next('div').slideUp();
 		}, 500);
