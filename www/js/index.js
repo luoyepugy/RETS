@@ -34,4 +34,14 @@ $(function() {
 	    $('.j-links').trigger('owl.prev');
 	});
 
+
+	// 包裹查询
+	$('.j-search').hover(function() {
+		$(this).parent().addClass('searchPackageOn');
+		$('.j-searchInput').addClass('none').next('div').removeClass('none');
+	}, function() {
+		$(this).parent().removeClass('searchPackageOn');
+		$('.j-searchInput').removeClass('none').next('div').addClass('none');
+	});
+
 });

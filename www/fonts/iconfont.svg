@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20120731 at Thu Mar 24 16:08:51 2016
+Created by FontForge 20120731 at Thu Mar 24 17:53:33 2016
  By Ads
 </metadata>
 <defs>
@@ -16,10 +16,10 @@ Created by FontForge 20120731 at Thu Mar 24 16:08:51 2016
     ascent="896"
     descent="-128"
     x-height="792"
-    bbox="0 -210 1022 896.296"
+    bbox="0 -128.296 1022.7 896.296"
     underline-thickness="50"
     underline-position="-100"
-    unicode-range="U+0078-E607"
+    unicode-range="U+0078-E609"
   />
 <missing-glyph horiz-adv-x="374" 
 d="M34 0v682h272v-682h-272zM68 34h204v614h-204v-614z" />
@@ -51,7 +51,12 @@ q8 0 16 3t14 9q12 13 12 30.5t-12 29.5z" />
     <glyph glyph-name="uniE606" unicode="&#xe606;" 
 d="M546 111l-409 546h819z" />
     <glyph glyph-name="uniE607" unicode="&#xe607;" 
-d="M994 -46l-225 225q15 24 26.5 49.5t19.5 52.5t12.5 56t4.5 59q0 172 -122 294t-294 122t-294 -122t-122 -294t122 -294t294 -122q116 0 217 63l225 -225q28 -28 68 -28t68 28t28 68t-28 68zM416 108q-119 0 -203.5 84.5t-84.5 203.5t84.5 203.5t203.5 84.5t203.5 -84.5
-t84.5 -203.5t-84.5 -203.5t-203.5 -84.5z" />
+d="M994 38l-225 225q63 101 63 217q0 113 -55.5 209t-151.5 151.5t-209 55.5t-209 -55.5t-151.5 -151.5t-55.5 -209t55.5 -209t151.5 -151.5t209 -55.5q116 0 217 63l225 -225q28 -28 68 -28t68 28q39 39 25 92q-7 26 -25 44zM416 192q-119 0 -203.5 84.5t-84.5 203.5
+t84.5 203.5t203.5 84.5t203.5 -84.5t84.5 -203.5t-84.5 -203.5t-203.5 -84.5z" />
+    <glyph glyph-name="uniE608" unicode="&#xe608;" horiz-adv-x="1485" 
+d="M387 399q0 34 16.5 62t44.5 44t62 16q51 0 87 -36t36 -87q0 -33 -16.5 -61.5t-45 -45t-61.5 -16.5q-51 0 -87 35.5t-36 86.5v2z" />
+    <glyph glyph-name="uniE609" unicode="&#xe609;" 
+d="M507 558q-47 0 -87 -23.5t-63.5 -63.5t-23.5 -87t23.5 -87t63.5 -63.5t87 -23.5t87 23.5t63.5 63.5t23.5 87t-23.5 87t-63.5 63.5t-87 23.5zM752 384q0 -67 -32.5 -123.5t-89 -89.5t-123.5 -33t-123.5 33t-89.5 89.5t-33 123.5t33 123.5t89.5 89.5t123.5 33t123.5 -33
+t89 -89.5t32.5 -123.5z" />
   </font>
 </defs></svg>

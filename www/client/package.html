@@ -41,7 +41,7 @@
     <div class="main-nav">
         <div class="center">
             <ul class="nav-title">
-                <li><a href="#"><i class="iconfont icon-home f24"></i></a></li>             
+                <li><a href="../index.html"><i class="iconfont icon-home f24"></i></a></li>             
                 <li class="j-nav">
                     <div><a href="#">关于俄通收</a></div>
                     <ul class="nav-child none">
@@ -109,7 +109,7 @@
             </div>
             <div class="content client">
                 <div><img src="../images/client/banner.jpg" alt="banner图"></div>
-                <form action=""　method="">
+                <form action=""　method="" class="form">
                     <p class="sub-title mt10">单号查询</p>
                     <textarea class="textarea" rows="5" placeholder="最多可同时查询20个运单号，请以逗号、空格或回车键隔开。"></textarea>
                     <p class="btn-search"><i class="iconfont icon-search-right mr10 f22"></i><span>查询</span></p>
@@ -117,37 +117,48 @@
                 <div class="search-result">
                     <div class="img">
                         <ul>
-                            <li class="active">
-                                <div class="icon"><i class=""></i></div>
+                            <li class="on">
+                                <div class="icon"><i class="icon-package"></i></div>
                                 <div class="tc">包裹已交收</div>
+                                <span class="dot on"></span>
                             </li>
-                            <li>
-                                <div class="icon"><i class=""></i></div>
+                            <li class="on">
+                                <div class="icon"><i class="icon-china"></i></div>
                                 <div class="tc">离开中国</div>
+                                <span class="dot"></span>
                             </li>
-                            <li>
-                                <div class="icon"><i class=""></i></div>
+                            <li class="on-half">
+                                <div class="icon"><i class="icon-russia2"></i></div>
                                 <div class="tc">到达俄罗斯</div>
+                                <span class="dot"></span>
                             </li>
                             <li>
-                                <div class="icon"><i class=""></i></div>
+                                <div class="icon"><i class="icon-track"></i></div>
                                 <div class="tc">正在派送</div>
+                                <span class="dot"></span>
                             </li>
                             <li>
-                                <div class="icon"><i class=""></i></div>
+                                <div class="icon"><i class="icon-record"></i></div>
                                 <div class="tc">妥投成功</div>
                             </li>
                         </ul>
                     </div>
                     <div class="text">
                         <p class="mb10">您的包裹<span class="red ml10">到达俄罗斯</span></p>
+                        <div class="ml35"><i class="icon-plane"></i></div>
                         <ul>
-                            <li><span>2016-03-04</span><span>19:58:05</span><span>到达俄罗斯</span></li>
-                            <li><span>2016-03-04</span><span>19:58:05</span><span>到达俄罗斯</span></li>
+                            <li><i class="dot-line"></i><span>2016-03-04</span><span>19:58:05</span><span>到达俄罗斯</span></li>
+                            <li><i class="dot-line"></i><span>2016-03-04</span><span>19:58:05</span><span>航运中</span></li>
+                            <li><i class="dot-line"></i><span>2016-03-04</span><span>19:58:05</span><span>出口清关完成</span></li>
+                            <li><i class="dot-line"></i><span>2016-03-04</span><span>19:58:05</span><span>到达海关</span></li>
+                            <li><i class="dot-line"></i><span>2016-03-04</span><span>19:58:05</span><span>清关</span></li>
+                            <li><i class="dot-line"></i><span>2016-03-04</span><span>19:58:05</span><span>离开仓库</span></li>
+                            <li class="edge"><i class="dot-line"></i><span>2016-03-04</span><span>19:58:05</span><span>交寄成功</span></li>
                         </ul>
                     </div>
                 </div>
-            </div>   
+            </div>
+            <div class="clearfix"></div> 
         </div>
     </div>
     <!-- /主要内容 -->

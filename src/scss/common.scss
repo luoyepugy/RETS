@@ -30,7 +30,7 @@
 .icon-search2 {
     @extend .icons;
     @include size(40px);
-    background-position: 185px -8px;
+    background-position: 260px -8px;
 }
 .icon-box {
     @extend .icons;
@@ -62,9 +62,48 @@
 }
 .icon-russia {
     @extend .icons;
-    background-position: 120px 0;
+    background-position: 192px 0;
     @include size(40px, 35px);
 }
+
+// 包裹查询
+.icon-package {
+    @extend .icons;
+    background-position: 135px 0;
+    @include size(70px);
+}
+.icon-china {
+    @extend .icons;
+    background-position: 135px 225px;
+    @include size(70px);
+}
+.icon-russia2 {
+    @extend .icons;
+    background-position: 135px 163px;
+    @include size(70px);
+}
+.icon-track {
+    @extend .icons;
+    background-position: 135px 100px;
+    @include size(70px);
+}
+.icon-record {
+    @extend .icons;
+    background-position: 208px 105px;
+    @include size(70px);
+}
+.icon-plane {
+    @extend .icons;
+    background-position: 65px -72px;
+    @include size(60px, 50px);
+}
+.icon-searchOn {
+    @extend .icons;
+    background-position: 135px 0;
+    @include size(40px); 
+}
+
+
 // 标题
 .title {
     color: #333;
@@ -75,6 +114,10 @@
     color: #666;
     line-height: 40px;
     font-size: 18px;
+}
+
+.clearfix {
+    clear: both;
 }
 
 // icon
@@ -150,6 +193,9 @@
         position: relative;
         cursor: pointer;
     }
+    a {
+        display: block;
+    }
     
 }
 .nav-child {
@@ -170,7 +216,7 @@
 // 底部导航
 .footer {
     box-shadow: 0 5px 10px 0 #e0e0e0 inset;
-    margin-top: 20px;
+    margin-top: 50px;
     font-size: 12px;
     padding: 20px;
     background: linear-gradient(to bottom, #f0f0f0, #fbfbfb);
@@ -233,10 +279,9 @@
             &::before {
                 content: '';
                 @extend .icons;
-                background-position: 117px -142px;
+                background-position: 187px -142px;
                 position: absolute;
                 left: 0;
-
                 @include size(35px, 30px);
             }
         }

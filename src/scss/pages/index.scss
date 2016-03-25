@@ -30,9 +30,9 @@
 .business-nav {
     @include skin-bgfg($main-red, #fff);
     @include link-a(#fff, #fff);
-    line-height: 70px;
     height: 70px;
     &>li {
+        line-height: 70px;
         width: 128px;
         float: left;
         cursor: pointer;
@@ -45,7 +45,7 @@
             margin-left: 70px;
         }
     }
-    span {
+    .item {
         position: relative;
         bottom: 12px;
     }
@@ -85,22 +85,64 @@
     .tabs-content {
         background: #fff;
         padding: 20px;
-        p {
+        .searchInput {
             border-radius: 3px;
             border: 1px solid #989898;
             height: 40px;
             box-shadow: 0 0 4px 1px #989898 inset;
+            input {
+                // width: 310px;
+                line-height: 35px;
+                padding-left: 5px;
+                vertical-align: top;
+                border: 0;
+                // outline: none;
+                margin-top: 2px;
+            }
         }
-        input {
-            width: 310px;
-            line-height: 35px;
-            padding-left: 5px;
-            vertical-align: top;
-            border: 0;
-            outline: none;
-            margin-top: 2px;
+        textarea {
+            @include size(340px,95px);
+            padding: 15px;
         }
-    }  
+        
+    }
+}
+.searchPackageOn {
+    bottom: 83px;
+    height: 280px;
+    color: #333;
+    .btn {
+        float: right;
+        @include inline-block;
+        @include inside-center(90px,35px);
+        @include skin-bgfg($main-red, #fff);
+        &:last-child {
+            background: #bebebe;
+            margin-right: 15px;
+        }
+    }
+    // 是否国际单号
+    .isInter {
+        margin-top: -15px;
+        height: 30px;
+        span {
+            @include inline-block;
+            position: relative;
+            &:last-child {
+                line-height: 25px;
+                bottom: 25px;
+                font-size: 14px;
+            }
+        }
+        .checkbox {
+            @include size(25px);
+            box-shadow: 0 0 4px 1px #989898 inset;
+            bottom: 18px;
+        }
+    }
+    .tabs-content {
+        height: 193px;
+    }
 }
 
 .infos {
