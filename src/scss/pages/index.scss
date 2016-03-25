@@ -91,12 +91,12 @@
             height: 40px;
             box-shadow: 0 0 4px 1px #989898 inset;
             input {
-                // width: 310px;
+                width: 310px;
                 line-height: 35px;
                 padding-left: 5px;
                 vertical-align: top;
                 border: 0;
-                // outline: none;
+                outline: none;
                 margin-top: 2px;
             }
         }
@@ -109,7 +109,7 @@
 }
 .searchPackageOn {
     bottom: 83px;
-    height: 280px;
+    // height: 280px;
     color: #333;
     .btn {
         float: right;

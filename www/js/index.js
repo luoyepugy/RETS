@@ -37,11 +37,16 @@ $(function() {
 
 	// 包裹查询
 	$('.j-search').hover(function() {
-		$(this).parent().addClass('searchPackageOn');
-		$('.j-searchInput').addClass('none').next('div').removeClass('none');
+		$(this).parent().addClass('searchPackageOn').animate({height:'280px'});
+		setTimeout(function() {
+			$('.j-searchInput').slideUp().next('div').slideDown();
+		}, 500);
 	}, function() {
-		$(this).parent().removeClass('searchPackageOn');
-		$('.j-searchInput').removeClass('none').next('div').addClass('none');
+		$(this).parent().removeClass('searchPackageOn').animate({height:'143px'});
+		setTimeout(function() {
+			$('.j-searchInput').slideDown().next('div').slideUp();
+		}, 500);
+		
 	});
 
 });

@@ -4,6 +4,7 @@
 @import '../custom/mixin.scss';
 
 .main {
+	position: relative;
 	margin: 15px 0 100px 0;
 	.side-menu {
 		width: 200px;
@@ -49,7 +50,7 @@
 	}
 	.content {
 		width: 800px;
-		float: right;
+		@include float-right;
 		vertical-align: top;
 		margin-left: 18px;
 	}
