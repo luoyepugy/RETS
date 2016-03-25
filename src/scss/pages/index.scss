@@ -109,7 +109,7 @@
 }
 .searchPackageOn {
     bottom: 83px;
-    // height: 280px;
+    height: 280px;
     color: #333;
     .btn {
         float: right;
@@ -126,18 +126,27 @@
         margin-top: -15px;
         height: 30px;
         span {
-            @include inline-block;
             position: relative;
-            &:last-child {
-                line-height: 25px;
-                bottom: 25px;
-                font-size: 14px;
-            }
+            bottom: 25px;
+            font-size: 14px;
         }
         .checkbox {
             @include size(25px);
             box-shadow: 0 0 4px 1px #989898 inset;
             bottom: 18px;
+            @include inline-block;
+            position: relative;
+        }
+        .checked {
+            position: relative;
+            &:after {
+                content: "\e60a";
+                @include position-basic(absolute, top,-23px, left,2px);
+                font-size: 20px;
+                bottom: 25px;
+                @include size(25px);
+
+            }
         }
     }
     .tabs-content {

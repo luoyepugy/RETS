@@ -39,14 +39,26 @@ $(function() {
 	$('.j-search').hover(function() {
 		$(this).parent().addClass('searchPackageOn').animate({height:'280px'});
 		setTimeout(function() {
-			$('.j-searchInput').slideUp().next('div').slideDown();
+			$('.j-searchInput').slideUp('fast').next('div').slideDown();
 		}, 500);
 	}, function() {
 		$(this).parent().removeClass('searchPackageOn').animate({height:'127px'});
 		setTimeout(function() {
 			$('.j-searchInput').slideDown().next('div').slideUp();
 		}, 500);
-		
+	});
+
+	// 是否国际单号
+	$('.j-checked').click(function() {
+		var checked = false;
+		$(this).find('.checkbox').toggleClass('checked');
+		if($(this).find('.checkbox').hasClass('checked')) {
+			checked = true;
+		} else {
+			checked = false;
+		}
+		$(this).find('input[type="checkbox"]').prop('checked', checked);
+		console.log($(this).find('input[type="checkbox"]').prop('checked'));
 	});
 
 });
