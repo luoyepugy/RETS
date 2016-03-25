@@ -50,9 +50,9 @@
 	}
 	.content {
 		width: 800px;
-		@include float-right;
+		@include inline-block;
 		vertical-align: top;
-		margin-left: 18px;
+		margin-left: 17px;
 	}
 }
 
