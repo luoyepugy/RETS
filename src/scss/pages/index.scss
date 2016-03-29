@@ -1,5 +1,4 @@
 
-@import '../custom/custom.scss';
 @import '../custom/mixin.scss';
 
 
@@ -48,16 +47,17 @@
     .item {
         position: relative;
         bottom: 12px;
+        font-size: 14px;
     }
 }
 .business-content {
     margin-bottom: 25px;
     li {
         @include inline-block;
-        width: 31.5%;
-        padding-left: 14px;
-        &:last-child {
-            margin-right: 0;
+        width: 33%;
+        img {
+            display: block;
+            margin: 0 auto;
         }
     }
 }
@@ -108,8 +108,8 @@
     }
 }
 .searchPackageOn {
-    bottom: 83px;
-    height: 280px;
+    bottom: 85px;
+    // height: 280px;
     color: #333;
     .btn {
         float: right;

@@ -16,8 +16,8 @@
             <ul>
                 <li><a href="#">注册</a></li>
                 <li><a href="#">登录</a></li>
-                <li><a href="#">收藏</a><span class="ml15">|</span></li>
-                <li><a href="#">设为首页</a></li>
+                <li><a href="javascript:void(0)" title="加入收藏" onclick="AddFavorite('http://www.baidu.com','RETS')">收藏</a><span class="ml15">|</span></li>
+                <li><a href="javascript:void(0)" onclick="SetHome('http://www.baidu.com')">设为首页</a></li>
             </ul>
         </div>    
     </div>
@@ -109,17 +109,17 @@
         <ul class="business-nav">
             <li class="pr iconfont">
                 <a href="client/package.html"><i class="icon-search"></i><span class="item">包裹追踪</span></a>
-                <div class="searchPackage">
+                <div class="searchPackage j-search">
                     <ul class="tabs">
                         <li class="active">包裹追踪</li>
                         <li>在线寄件</li>
                     </ul>
-                    <div class="tabs-content j-search">
+                    <div class="tabs-content">
                         <p class="j-searchInput searchInput">
                             <i class="icon-search2"></i>
                             <input type="text" placeholder="在此输入订单号进行查询" name="search" value="">
                         </p>
-                        <div class="none">
+                        <form class="none" method="" action="">
                             <textarea cols="3" rows="5" placeholder="最多输入３０个查询号码（每行一个）"></textarea>
                             <p class="isInter j-checked"> 
                                 <i class="checkbox iconfont"></i>
@@ -127,7 +127,7 @@
                                 <input class="none" name="isInternation" id="isInternation" type="checkbox" value="">
                             </p>
                             <p><span class="btn">确定</span><span class="btn">清除</span></p>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </li>

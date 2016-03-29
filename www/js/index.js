@@ -36,16 +36,21 @@ $(function() {
 
 
 	// 包裹查询
+	var time = null;
 	$('.j-search').hover(function() {
-		$(this).parent().addClass('searchPackageOn').animate({height:'280px'});
-		setTimeout(function() {
-			$('.j-searchInput').slideUp('fast').next('div').slideDown();
-		}, 500);
+		clearTimeout(time);
+		var that = $(this);
+		time = setTimeout(function() {
+			that.addClass('searchPackageOn').animate({'height':'280px'});
+			$('.j-searchInput').slideUp(200).next().slideDown();
+		}, 300);
 	}, function() {
-		$(this).parent().removeClass('searchPackageOn').animate({height:'127px'});
-		setTimeout(function() {
-			$('.j-searchInput').slideDown().next('div').slideUp();
-		}, 500);
+		clearTimeout(time);
+		var that = $(this);
+		time = setTimeout(function() {
+			that.removeClass('searchPackageOn').animate({'height':'127px'});
+			$('.j-searchInput').slideDown().next().slideUp(200);
+		}, 300);
 	});
 
 	// 是否国际单号
@@ -58,7 +63,6 @@ $(function() {
 			checked = false;
 		}
 		$(this).find('input[type="checkbox"]').prop('checked', checked);
-		console.log($(this).find('input[type="checkbox"]').prop('checked'));
 	});
 
 });

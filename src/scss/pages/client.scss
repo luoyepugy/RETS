@@ -1,6 +1,4 @@
 
-
-@import '../custom/custom.scss';
 @import '../custom/mixin.scss';
 
 .main {
@@ -149,7 +147,7 @@
 			@include size(10px,45px);
 			z-index: 5;
 		}
-		.edge {
+		li:last-child {
 			.dot-line {
 				background-position: 70px -26px;
 			}
