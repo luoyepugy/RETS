@@ -109,24 +109,31 @@
         <ul class="business-nav">
             <li class="pr iconfont">
                 <a href="client/package.html"><i class="icon-search"></i><span class="item">包裹追踪</span></a>
-                <div class="searchPackage j-search">
+                <div class="searchPackage j-search searchPackageOn">
                     <ul class="tabs">
                         <li class="active">包裹追踪</li>
                         <li>在线寄件</li>
                     </ul>
                     <div class="tabs-content">
-                        <p class="j-searchInput searchInput">
+                        <p class="j-searchInput searchInput none">
                             <i class="icon-search2"></i>
                             <input type="text" placeholder="在此输入订单号进行查询" name="search" value="">
                         </p>
-                        <form class="none" method="" action="">
-                            <textarea cols="3" rows="5" placeholder="最多输入３０个查询号码（每行一个）"></textarea>
+                        <form class="" method="" action="">
+                            <textarea cols="2" rows="5" placeholder="最多输入３０个查询号码（每行一个）"></textarea>
                             <p class="isInter j-checked"> 
                                 <i class="checkbox iconfont"></i>
                                 <span>国际单号</span>
                                 <input class="none" name="isInternation" id="isInternation" type="checkbox" value="">
                             </p>
-                            <p><span class="btn">确定</span><span class="btn">清除</span></p>
+                            <p class="tr"><span class="btn">清除</span><span class="btn">确定</span></p>
+                            <div class="cb mt10">
+                                <img class="db" src="images/index/17track.jpg" alt="17track" />
+                                <div class="notice">
+                                    <p>17TRACK已支持俄通收快递的单号查询！</p>
+                                    <p>17TRACK supports RETS parcel tracking now!</p>
+                                </div>
+                            </div>
                         </form>
                     </div>
                 </div>

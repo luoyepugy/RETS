@@ -30,8 +30,9 @@
     @include skin-bgfg($main-red, #fff);
     @include link-a(#fff, #fff);
     height: 70px;
+    margin-bottom: 10px;
     &>li {
-        line-height: 70px;
+        height: 70px;
         width: 128px;
         float: left;
         cursor: pointer;
@@ -101,41 +102,42 @@
             }
         }
         textarea {
-            @include size(340px,95px);
-            padding: 15px;
+            @include size(340px,70px);
+            padding: 10px 15px;
         }
-        
+        .notice {
+            box-shadow: 0 0 4px 1px #989898 inset;
+            text-align: center;
+            font-size: 14px;
+            padding: 10px;
+        }
     }
 }
 .searchPackageOn {
-    bottom: 85px;
-    // height: 280px;
+    bottom: 70px;
+    height: 350px;
     color: #333;
     .btn {
-        float: right;
         @include inline-block;
         @include inside-center(90px,35px);
         @include skin-bgfg($main-red, #fff);
-        &:last-child {
+        &:first-child {
             background: #bebebe;
             margin-right: 15px;
         }
     }
     // 是否国际单号
     .isInter {
-        margin-top: -15px;
         height: 30px;
         span {
             position: relative;
-            bottom: 25px;
+            bottom: 5px;
             font-size: 14px;
         }
         .checkbox {
             @include size(25px);
             box-shadow: 0 0 4px 1px #989898 inset;
-            bottom: 18px;
             @include inline-block;
-            position: relative;
         }
         .checked {
             position: relative;
@@ -150,7 +152,7 @@
         }
     }
     .tabs-content {
-        height: 193px;
+        // height: 193px;
     }
 }
 

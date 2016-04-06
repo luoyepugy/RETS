@@ -37,21 +37,21 @@ $(function() {
 
 	// 包裹查询
 	var time = null;
-	$('.j-search').hover(function() {
-		clearTimeout(time);
-		var that = $(this);
-		time = setTimeout(function() {
-			that.addClass('searchPackageOn').animate({'height':'280px'});
-			$('.j-searchInput').slideUp(200).next().slideDown();
-		}, 300);
-	}, function() {
-		clearTimeout(time);
-		var that = $(this);
-		time = setTimeout(function() {
-			that.removeClass('searchPackageOn').animate({'height':'127px'});
-			$('.j-searchInput').slideDown().next().slideUp(200);
-		}, 300);
-	});
+	// $('.j-search').hover(function() {
+	// 	clearTimeout(time);
+	// 	var that = $(this);
+	// 	time = setTimeout(function() {
+	// 		that.addClass('searchPackageOn').animate({'height':'280px'});
+	// 		$('.j-searchInput').slideUp(200).next().slideDown();
+	// 	}, 300);
+	// }, function() {
+	// 	clearTimeout(time);
+	// 	var that = $(this);
+	// 	time = setTimeout(function() {
+	// 		that.removeClass('searchPackageOn').animate({'height':'127px'});
+	// 		$('.j-searchInput').slideDown().next().slideUp(200);
+	// 	}, 300);
+	// });
 
 	// 是否国际单号
 	$('.j-checked').click(function() {
