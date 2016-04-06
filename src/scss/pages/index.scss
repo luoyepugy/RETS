@@ -68,7 +68,7 @@
     overflow: hidden;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    @include position-basic(absolute, left, 0 , bottom, 84px);
+    @include position-basic(absolute, left, 0 , bottom, 70px);
     border: 1px solid #bebebe;
     border-bottom: 0;
     @include size(410px, 127px);
@@ -104,6 +104,7 @@
         textarea {
             @include size(340px,70px);
             padding: 10px 15px;
+            overflow-y: auto;
         }
         .notice {
             box-shadow: 0 0 4px 1px #989898 inset;
@@ -115,7 +116,7 @@
 }
 .searchPackageOn {
     bottom: 70px;
-    height: 350px;
+    // height: 350px;
     color: #333;
     .btn {
         @include inline-block;
@@ -150,9 +151,6 @@
 
             }
         }
-    }
-    .tabs-content {
-        // height: 193px;
     }
 }
 
